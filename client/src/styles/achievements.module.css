@@ -1,0 +1,124 @@
+.bg {
+  background-image: url("../images/main-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.ach-header {
+  font-size: 5rem;
+  font-family: "Rum Raisin", sans-serif;
+  color: #cbd4df;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  position: relative;
+  top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.tot-points {
+    text-align: right;
+    padding-right: 10rem;
+    font-size: 2rem;
+    color: var(--purple-700);
+    font-family: "Rum Raisin", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.tot-points span {
+    color: gold;
+}
+.achievement-board {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .card, .hidden-card {
+    width: 15rem;
+    height: 22rem;
+    background-color: rgb(88, 22, 132);
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .hidden-card {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .card img, .hidden-card img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -1.1rem;
+  }
+  
+  .card-content, .hidden-card .card-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .achievement-item {
+    font-size: 1rem;
+    color: white;
+    margin-top: auto;
+    padding: 0;
+  }
+  
+  .hidden-card .achievement-item {
+    color: lightgray;
+  }
+  
+  .lock-icon {
+    position: absolute;
+    font-size: 3rem;
+    color: rgba(22, 5, 5, 0.8);
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .ach-name {
+    font-size: 1.6rem;
+    color: #c2bfbf;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hidden-card .ach-name {
+    color: lightgray;
+  }
+  
+  .points-text {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #c2bfbf;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  

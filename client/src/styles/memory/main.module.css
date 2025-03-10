@@ -1,0 +1,152 @@
+/* General Game Container */
+.gameContainer {
+    font-family: "Rum Raisin", sans-serif;
+    text-align: center;
+    background: linear-gradient(145deg, #1a1b4b, #300049);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    min-height: 100vh;
+  }
+
+  .mainArea {
+    position: relative;
+    top: 3rem;
+    font-size: 4rem;
+    margin-top: 20px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .totalPoints {
+    color: white;
+  }
+  
+
+  
+  /* Game board grid layout */
+  .gameBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* 4 cards per row */
+    grid-gap: 2px; /* Space between cards */
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 650px; /* Limit max width */
+    justify-items: center; /* Center each card in its grid cell */
+  }
+  
+  /* Card container for perspective */
+  .cardContainer {
+    position: relative;
+    perspective: 1000px; /* 3D effect */
+  }
+  
+  /* Card styling */
+  .card {
+    position: relative;
+    width: 70px;
+    height: 120px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  /* Flipped card effect */
+  .card.flipped {
+    transform: rotateY(180deg); /* Show front side */
+  }
+  
+  /* Front and back of the card */
+  .cardFront,
+  .cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide opposite side */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card front - shows unique images */
+  .cardFront {
+    transform: rotateY(180deg); /* Initially hidden */
+  }
+  
+  .cardFront img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Card back - shows the back image */
+  .cardBack {
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(0); /* Default side */
+    border-radius: 10px;
+  }
+  
+  .cardBack img {
+    width: 100%; /* Scale to fit card size */
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  /* Popup styles */
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .popupContent {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .popupContent h2 {
+    margin-bottom: 10px;
+  }
+  
+  .popupContent p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .popupButtons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popupButtons button:hover {
+    background-color: #ddd;
+  }
+
+
+  .time {
+    position: relative;
+    top: 4rem;
+    color: white;
+  }
+  

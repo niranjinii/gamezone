@@ -1,0 +1,129 @@
+.tictactoe-div {
+  background: linear-gradient(145deg, #1a1b4b, #300049);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+/* Game Container */
+.game-container {
+  text-align: center;
+  font-family: "Rum Raisin", sans-serif;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 6px rgba(8, 8, 9, 0.6);
+}
+
+/* Title */
+.title {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #0b062b, 0 0 20px #02010a;
+}
+
+/* Winner and Turn Announcements */
+.winner,
+.turn {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  text-shadow: 0 0 8px #ffffff, 0 0 15px #ff99ff;
+}
+
+/* Game Board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Squares */
+.square {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #3b389b;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.square:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.square.disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Reset Button */
+.reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(120deg, #4e0e73, #1a074b);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.reset-button:hover {
+  background: linear-gradient(120deg, #280d51, #15044c);
+  transform: scale(1.1);
+}
+
+/* Start Button */
+.start-button {
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: linear-gradient(120deg, #3b0a91, #27065c);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.start-button:hover {
+  background: linear-gradient(120deg, #4d1e9b, #3b0d85);
+  transform: scale(1.1);
+}
+
+/* Hidden Game Board */
+.hidden {
+  display: none; /* Completely hide the element */
+}
+
+.draw,
+.loss {
+  font-size: 1.5rem;
+  color: #ff6161;
+  margin: 20px 0;
+  text-shadow: 0 0 8px #ff6161, 0 0 15px #ff0000;
+}
+
+/* Updated Play Again Button (Modal-Specific) */
+.modal-button.play-again {
+  background: linear-gradient(120deg, #5a1d85, #7a2ebd);
+}
+
+.modal-button.play-again:hover {
+  background: linear-gradient(120deg, #4a1c74, #692ea6);
+}

@@ -1,0 +1,105 @@
+.bg {
+  background-image: url("../images/main-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  /* align-items: center; */
+  position: relative;
+  top: 10rem;
+  /* justify-content: center; */
+  height: 31.5rem;
+  width: 60rem;
+  padding-left: 0;
+  background-color: rgb(58, 9, 117);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+  padding-right: 0;
+  margin: 0 auto;
+}
+
+.img {
+  height: 100%;
+  object-fit: cover;
+  width: 50%;
+  margin: 0;
+}
+
+.loginbox {
+  background-color: rgba(164, 143, 202, 0.8);
+  padding: 2.2rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 50%;
+  margin: 0;
+}
+
+.loginbox h2 {
+  font-family: "Rum Raisin", sans-serif;
+  font-size: 5rem;
+  color: rgba(24, 5, 70, 0.8);
+  margin-bottom: 1.25rem;
+}
+
+.inputbox {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.inputbox label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.inputbox input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.loginbox button,
+.alertbox button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #402f7a;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Button Hover State */
+.loginbox button:hover,
+.alertbox button:hover {
+  background-color: #1d2157;
+}
+
+
+.signuptext {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.logged-in {
+  position: relative;
+  top: 10rem;
+  text-align: center;
+  font-family: "Rum Raisin", sans-serif;
+  font-size: 2rem;
+  color: white;
+}

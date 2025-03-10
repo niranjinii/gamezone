@@ -1,0 +1,184 @@
+.bg {
+  background-image: url("../images/main-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-attachment: fixed;
+}
+
+.backgroundstars {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Set the size of the stars image */
+  height: 100%;
+  z-index: 0; /* Make sure it's in the background */
+  opacity: 0.8; /* Reduce opacity for a subtle effect */
+  animation: floatStarsBg 10s infinite linear; /* Slow floating effect */
+  pointer-events: none; /* Prevent interaction */
+}
+
+/* Floating animation for the background stars */
+@keyframes floatStarsBg {
+  0% {
+    transform: translateX(-50%) translateY(0); /* Start from the top */
+  }
+  50% {
+    transform: translateX(-50%) translateY(30px); /* Float down slightly */
+  }
+  100% {
+    transform: translateX(-50%) translateY(0); /* Float back up */
+  }
+}
+
+/* Content styling */
+.content {
+  color: var(--grey-300);
+  font-size: 1.25rem;
+  font-family: "Rum Raisin", sans-serif;
+  margin: 0 auto;
+  position: relative;
+  top: 13rem;
+  padding: 3rem 0;
+  width: 700px;
+  z-index: 1; /* Ensure it appears in front of the stars */
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 13rem;
+  font-family: "Rum Raisin", sans-serif;
+  color: var(--purple-700);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.55);
+}
+
+.link {
+  padding: 0.6rem;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all ease-out 1s;
+  font-size: 3rem;
+}
+
+.link:hover {
+  transform: scale(1.07);
+  color: var(--grey-300);
+}
+
+.link,
+.content p {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-shadow: 3px rgba(0, 0, 0, 0.55);
+}
+.content p {
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+}
+
+.content p span {
+  color: var(--blue-500);
+}
+
+.bg h4 {
+  text-align: center;
+  position: relative;
+  top: 3rem;
+  z-index: 1;
+  margin-bottom: 1.2rem;
+  margin-top: 20rem;
+  display: block;
+  color: white;
+  font-size: 4rem;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.55);
+}
+
+.gameslist {
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel,
+.carousel-item {
+  height: 48rem;
+  width: 85.375 rem;
+}
+
+.carousel-img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-control-prev {
+  left: -2rem;
+}
+
+.carousel-control-next {
+  right: -2rem;
+}
+
+.carousel .carousel-caption p {
+  text-align: right;
+  position: relative;
+}
+
+.glink {
+  text-decoration: none;
+  font-family: "Rum Raisin", sans-serif;
+  font-size: 2.5rem;
+  color: rgb(77, 72, 72);
+  background-color: rgb(230, 230, 230);
+  width: fit-content;
+  text-transform: uppercase;
+  transition: all 0.5s ease-out;
+  padding: 0.8rem;
+  border-radius: 10px;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.55);
+  position: relative;
+  top: -5rem;
+  left: 15rem;
+}
+
+.glink:hover {
+  color: var(--grey-300); /* or a specific color you prefer */
+  transform: scale(1.1); /* Scaling effect on hover */
+}
+
+
+.leaderboard-text {
+  font-family: "Rum Raisin", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  padding: 5rem auto;
+  margin: 20rem;
+  text-shadow: 3px 3px 3px 8px rgba(0, 0, 0, 0.55);
+  transition: all ease-out 1s;
+}
+
+.leaderboard-link {
+  color: white;
+  text-decoration: none;
+  transition: all ease-out 1s;
+}
+
+.leaderboard-text:hover {
+  transform: scale(1.1);
+  color: var(--grey-300);
+}
+
+.leaderboard-link:hover {
+  color: var(--grey-300);
+}
+
+.space {
+  margin: 5rem;
+  padding: 3rem;
+}

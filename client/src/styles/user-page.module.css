@@ -1,0 +1,62 @@
+.bg {
+    background-image: url("../images/main-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-repeat: no-repeat;  /* Prevents repetition of background */
+  }
+  
+  .profile-container {
+    display: flex;
+    justify-content: flex-start;  /* Aligns profile to the left */
+    padding: 2rem;  /* Adds more padding around the profile */
+    position: relative;
+    top: 10rem;  /* Adjusts profile's vertical position */
+    color: white;
+    max-width: 1200px;  /* Restricts max-width for better readability */
+    margin: 0 auto;  /* Centers the profile container */
+  }
+  
+  .profile-area {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 2rem;  /* Adds spacing between image and text */
+    align-items: flex-start;  /* Align text to the left */
+    justify-content: center;  /* Vertically aligns content */
+    max-width: 500px;  /* Restricts width of text area */
+  }
+  
+  .user-img {
+    border-radius: 50%;
+    width: 15rem;  /* Keeps avatar size */
+    height: 15rem; /* Maintains aspect ratio */
+    margin-right: 2rem;  /* Reduces space between image and text */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Adds subtle shadow around image */
+    object-fit: cover;  /* Ensures the image fits inside the circle */
+  }
+  
+  .profile-area h3 {
+    font-family: "Rum Raisin", sans-serif;
+    font-size: 4.5rem;  /* Slightly smaller for readability */
+    margin-bottom: 1rem;  /* Adds spacing below the name */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Adds shadow for better text visibility */
+    color: rgb(160, 199, 221);
+  }
+  
+  .profile-area p {
+    font-size: 2.5rem;  /* Adjusted font size for better balance */
+    margin-bottom: 0.8rem;  /* Adds spacing between the lines */
+    line-height: 1.5;  /* Increases line height for better readability */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4); /* Adds subtle text shadow for contrast */
+  }
+  
+  .star-icon {
+    font-size: 2.8rem;  /* Adjusts icon size */
+    margin-right: 0.5rem; /* Adds spacing between icon and text */
+    color: gold;
+  }
+  

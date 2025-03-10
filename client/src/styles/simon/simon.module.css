@@ -1,0 +1,158 @@
+.main {
+  text-align: center;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: "Luminari", fantasy;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(145deg, #1a1b4b, #300049);
+  color: #fff;
+  overflow: hidden;
+}
+
+.header {
+  margin-bottom: 2rem;
+  position: relative;
+  top: 5rem; /* Keep this for additional offset */
+  font-family: "Rum Raisin", sans-serif;
+}
+
+.header h1 {
+  color: white;
+  font-size: 4rem;
+  text-shadow: 0 0 10px #03000762;
+
+  font-size: 3rem;
+  margin: 0;
+  position: relative;
+  left: 23rem;
+}
+
+.header p {
+  color: #b490ff;
+  font-size: 1.2rem;
+  position: relative;
+  top: 4.5rem; /* Smaller offset for better alignment */
+  right: 26rem;
+}
+
+.simonGame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  top: 6rem;
+  font-family: "Rum Raisin", sans-serif;
+}
+
+.gameInfo {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+  color: #b490ff;
+}
+
+.gameBoard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(155, 109, 255, 0.3);
+}
+
+.gameButton {
+  width: 150px;
+  height: 150px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.gameButton img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.gameButton:hover:not(:disabled) img {
+  transform: scale(1.1);
+}
+
+.gameButton.green {
+  background: rgba(0, 255, 0, 0.2);
+}
+
+.gameButton.red {
+  background: rgba(255, 0, 0, 0.2);
+}
+
+.gameButton.blue {
+  background: rgba(0, 0, 255, 0.2);
+}
+
+.gameButton.yellow {
+  background: rgba(255, 255, 0, 0.2);
+}
+
+.gameButton.active {
+  transform: scale(0.95);
+}
+
+.gameButton.active.green {
+  background: rgba(0, 255, 0, 0.6);
+}
+
+.gameButton.active.red {
+  background: rgba(255, 0, 0, 0.6);
+}
+
+.gameButton.active.blue {
+  background: rgba(0, 0, 255, 0.6);
+}
+
+.gameButton.active.yellow {
+  background: rgba(255, 255, 0, 0.6);
+}
+
+.gameButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.start-button {
+  background: #9b6dff;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Luminari", fantasy;
+  transition: all 0.2s ease;
+  font-family: "Rum Raisin", sans-serif;
+}
+
+.start-button:hover:not(:disabled) {
+  background: #8451ff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(155, 109, 255, 0.4);
+ 
+}
+
+.start-button:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+.gameOverMessage h2 {
+    font-size: 1rem;
+}
+

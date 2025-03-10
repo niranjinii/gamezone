@@ -1,0 +1,124 @@
+.lbg {
+  background-image: url("../images/main-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-attachment: fixed;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Leaderboard Container */
+.leaderboard-container {
+  position: relative;
+  top: 5rem;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/* Main Leaderboard Page Styling */
+.leaderboardpage {
+  margin: 2rem auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Leaderboard Header Styling */
+.leaderboardheader {
+  font-size: 4.5rem;
+  font-family: "Rum Raisin", sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  gap: 0.8rem;
+}
+
+/* Leaderboard Container Styling */
+.leaderboard {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(50, 50, 100, 0.7)
+  );
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Main List Styling */
+.leaderboardmain {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header Row Styling */
+.leaderboard .header {
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: "Rum Raisin", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Individual Leaderboard Items */
+.leaderboarditem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0.8rem 0;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: #e0e0e0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Items */
+.leaderboarditem:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(255, 223, 145, 0.6);
+  background-color: rgba(50, 50, 100, 0.6);
+}
+
+/* Styling for Text in Leaderboard Items */
+.leaderboarditem p {
+  padding: 0.5rem 1rem;
+  flex: 1;
+  font-size: 1.8rem;
+  font-family: "Rum Raisin", sans-serif;
+  color: #cb9cd7;
+}
+
+.leaderboardlink {
+  text-decoration: none;
+}
+
+.empty {
+  font-family: "Rum Raisin", sans-serif;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.space {
+  margin: 5rem;
+  padding: 3rem;
+}

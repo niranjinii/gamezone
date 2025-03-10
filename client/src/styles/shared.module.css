@@ -1,0 +1,80 @@
+html {
+  --blue-800: #1c1c3c;
+  --grey-300: #e0e0e0;
+  --blue-500: #00ccff;
+  --green-300: #39ff14;
+  --purple-700: #8db5eb;
+  --beige-200: #f5f5dc;
+  --orange-300: #ffa500;
+  --green-200: #32cd32;
+  --grey-500: #2f4f4f;
+  --pink-600: #ff69b4;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Crimson Text", sans-serif;
+}
+
+#root {
+  height: 100%; /* Ensures React root element spans the full height */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  padding: 0 12rem;
+  z-index: 10;
+}
+
+.mainlogo {
+  font-family: "Rum Raisin", serif;
+  color: var(--purple-700);
+  margin: 0.6 rem;
+  font-size: 3rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.551);
+  transition: all 0.5s ease-out;
+}
+
+.mainlogo:hover {
+  transform: scale(1.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navbar li {
+  padding: 0;
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: var(--grey-300);
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--grey-300);
+  padding: 0;
+  transition: all 0.5s ease-out;
+}
+
+.link:hover {
+  color: var(--grey-300);
+  transform: scale(1.05);
+}

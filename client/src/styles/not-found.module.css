@@ -1,0 +1,32 @@
+.bg {
+  background-image: url("../images/main-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.nf-container {
+  margin: 0 auto;
+  position: relative;
+  top: 7rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.nf-container h3 {
+  font-family: "Rum Raisin", sans-serif;
+  font-size: 4rem;
+  color: rgb(130, 185, 247);
+  text-align: center;
+} 
+
+.nf-container p {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+

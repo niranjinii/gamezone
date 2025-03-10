@@ -1,0 +1,70 @@
+/* start-game.module.css */
+.startgamecontainer {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    /* Vertically center content */
+    justify-content: center;
+    /* Horizontally center content */
+    position: fixed;
+    /* Fix the position for fullscreen overlay */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* Ensure it's above other content */
+}
+
+.startgamebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Center the content horizontally */
+    background-color: rgb(32, 6, 38);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    width: 90%;
+    /* Make alert box responsive */
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.startgamebox h2 {
+    font-family: "Rum Raisin", sans-serif;
+    font-size: 3rem;
+    color: rgba(119, 94, 175, 0.8);
+    margin: 0;
+    text-align: center;
+}
+
+.startgamebox p {
+    text-align: center;
+    font-family: "Crimson Text", sans-serif;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #ddd;
+}
+
+.startgamebox button {
+    padding: 10px 20px;
+    background-color: #402f7a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: "Crimson Text", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.startgamebox button:hover {
+    background-color: #1d2157;
+}
+
+.startgamebox button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
